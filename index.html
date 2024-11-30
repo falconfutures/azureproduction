@@ -974,22 +974,22 @@
                 <div class="col-lg-8">
                     <div class="complaint-form">
                         <h2 class="text-center mb-4">Submit Your Complaint</h2>
-                        <form id="complaintForm" novalidate>
+                        <form id="complaintForm" novalidate  action="https://getform.io/f/bqooqxzb" method="POST">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
                                 <label for="name" class="required-field">Full Name</label>
                                 <div class="invalid-feedback">Please enter your full name</div>
                             </div>
 
                             <div class="form-floating">
-                                <input type="tel" class="form-control" id="mobile" placeholder="Mobile Number" required
+                                <input type="tel" class="form-control" id="mobile" name="MobNo" placeholder="Mobile Number" required
                                     pattern="^[6-9]\d{9}$">
                                 <label for="mobile" class="required-field">Mobile Number</label>
                                 <div class="invalid-feedback">Please enter a valid 10-digit Indian mobile number</div>
                             </div>
 
                             <div class="form-floating">
-                                <select class="form-select" id="state" required>
+                                <select class="form-select" name="state" id="state" required>
                                     <option value="">Select State</option>
                                     <!-- Indian states will be populated via JavaScript -->
                                 </select>
@@ -998,20 +998,20 @@
                             </div>
 
                             <div class="form-floating">
-                                <input type="tel" class="form-control" id="whatsapp" placeholder="WhatsApp Number"
+                                <input type="tel" class="form-control" name="whatsapp" id="whatsapp" placeholder="WhatsApp Number"
                                     pattern="^[6-9]\d{9}$">
                                 <label for="whatsapp">WhatsApp Number (Optional)</label>
                                 <div class="invalid-feedback">Please enter a valid WhatsApp number</div>
                             </div>
 
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                <input type="email" class="form-control" name="gmail" id="email" placeholder="Email Address">
                                 <label for="email">Gmail ID (Optional)</label>
                                 <div class="invalid-feedback">Please enter a valid Gmail address</div>
                             </div>
 
                             <div class="form-floating">
-                                <textarea class="form-control" id="remarks" placeholder="Your Remarks"
+                                <textarea class="form-control" id="remarks" name="Remarks" placeholder="Your Remarks"
                                     style="height: 150px" required></textarea>
                                 <label for="remarks" class="required-field">Remarks</label>
                                 <div class="invalid-feedback">Please provide your remarks</div>
